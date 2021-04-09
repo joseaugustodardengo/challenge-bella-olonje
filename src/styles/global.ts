@@ -16,6 +16,8 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   html {
+    position: relative;
+    height: 100vh;
     @media (max-width: 1080px) {
       font-size: 93.75%;
     }
@@ -25,7 +27,7 @@ export const GlobalStyle = createGlobalStyle`
     }
   }
 
-  body {
+  body {    
     background: var(--white-color);
     -webkit-font-smoothing: antialiased;
   }
@@ -37,6 +39,7 @@ export const GlobalStyle = createGlobalStyle`
   a {
     font-weight: 600;
     color: var(--dark-blue);
+    text-decoration: none;    
   }
 
   h1, h2, h3 {
