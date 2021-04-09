@@ -4,7 +4,6 @@ import { Container, Content, TextContent, ButtonContent } from './styles';
 export function Header() {
   return (
     <Container>
-      {/* MENU NAVEGAÇÃO */}
       <nav>
         <img src={logoImg} alt="Bella Olonge" />
 
@@ -24,7 +23,6 @@ export function Header() {
         </ul>
       </nav>
 
-      {/* DESTAQUE COM A IMAGEM  */}
       <Content>
         <TextContent>
           <h3>Food app</h3>
