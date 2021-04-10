@@ -36,7 +36,7 @@ export const GlobalStyle = createGlobalStyle`
     font-family: 'Montserrat', sans-serif;
   }
 
-  a {
+  a, p {
     font-weight: 600;
     color: var(--dark-blue);
     text-decoration: none;    
