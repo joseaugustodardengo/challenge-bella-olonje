@@ -5,10 +5,12 @@ import { Section } from '../../components/Section';
 import loginImg from '../../assets/login-image.svg';
 import mealsImg from '../../assets/meals-image.svg';
 import checkoutImg from '../../assets/checkout-image.svg';
+import { Menu } from '../../components/Menu';
 
 export function Homepage() {
   return (
     <div>
+      <Menu />
       <Header />
       <Spotlight />
       <Content>
