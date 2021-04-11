@@ -1,11 +1,14 @@
 import styled from 'styled-components';
-import spotlightImg from '../../assets/spotlight-image.svg';
 
-export const Content = styled.div`
-  height: 38.688rem;
-  background-image: url(${spotlightImg});
+interface ContentProps {
+  img: string;
+}
+
+export const Content = styled.div<ContentProps>`
+  height: 38.688rem;  
+  background-image: url(${props => props.img});
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; 
 `
 
 export const TextContent = styled.div`

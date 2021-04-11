@@ -1,17 +1,24 @@
+import { Menu } from '../../components/Menu';
+import { Featured } from '../../components/Featured';
 import { Spotlight } from '../../components/Spotlight';
-import { Header } from '../../components/Header';
-import { Content } from './styles';
 import { Section } from '../../components/Section';
+import { Content } from './styles';
 import loginImg from '../../assets/login-image.svg';
 import mealsImg from '../../assets/meals-image.svg';
 import checkoutImg from '../../assets/checkout-image.svg';
-import { Menu } from '../../components/Menu';
+import headerImg from '../../assets/header-image.svg';
+import footerImg from '../../assets/footer-image.svg';
 
 export function Homepage() {
   return (
     <div>
       <Menu />
-      <Header />
+      <Featured
+        picture={headerImg}
+        title="Food app"
+        subtitle="Why stay hungry when you can order form Bella Onojie"
+        content="Download the bella onoje’s food app now on"
+      />
       <Spotlight />
       <Content>
         <hr />
@@ -40,6 +47,12 @@ export function Homepage() {
         title="Checkout"
         subtitle="When you done check out and get it delivered."
         content="When you done check out and get it delivered with ease."
+      />
+
+      <Featured
+        picture={footerImg}
+        subtitle="Download the app now."
+        content="Available on your favorite store. Start your premium experience now"
       />
     </div>
   );
