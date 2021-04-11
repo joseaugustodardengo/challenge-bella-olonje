@@ -8,6 +8,7 @@ import mealsImg from '../../assets/meals-image.svg';
 import checkoutImg from '../../assets/checkout-image.svg';
 import headerImg from '../../assets/header-image.svg';
 import footerImg from '../../assets/footer-image.svg';
+import { Footer } from '../../components/Footer';
 
 export function Homepage() {
   return (
@@ -54,6 +55,8 @@ export function Homepage() {
         subtitle="Download the app now."
         content="Available on your favorite store. Start your premium experience now"
       />
+
+      <Footer />
     </div>
   );
 }
