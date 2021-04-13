@@ -16,24 +16,20 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   html {
-    position: relative;
-    height: 100vh;
-    @media (max-width: 1080px) {
-      font-size: 93.75%;
-    }
-    
-    @media (max-width: 720px) {
-      font-size: 87.5%;
-    }
+    font-size: 62.5%;
   }
 
-  body {    
+  html, body {
+    width: 100%;
+    max-width: 1880px;
+    height: 100vh;
     background: var(--white-color);
     -webkit-font-smoothing: antialiased;
+    font-family: 'Montserrat', sans-serif;
   }
 
-  body, input, textarea, button {
-    font-family: 'Montserrat', sans-serif;
+  body {
+    font-size: 1.6rem;
   }
 
   a, p {
@@ -53,10 +49,5 @@ export const GlobalStyle = createGlobalStyle`
   button {
     cursor: pointer;
     color: var(--white-color);
-  }
-
-  [disabled] {
-    opacity: 0.6;
-    cursor: not-allowed;
   }  
 `

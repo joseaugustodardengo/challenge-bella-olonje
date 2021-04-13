@@ -1,8 +1,8 @@
-import { Menu } from '../../components/Menu';
+import { Navbar } from '../../components/Navbar';
 import { Featured } from '../../components/Featured';
 import { Spotlight } from '../../components/Spotlight';
 import { Section } from '../../components/Section';
-import { Content } from './styles';
+import { Container, Content } from './styles';
 import loginImg from '../../assets/login-image.svg';
 import mealsImg from '../../assets/meals-image.svg';
 import checkoutImg from '../../assets/checkout-image.svg';
@@ -12,8 +12,8 @@ import { Footer } from '../../components/Footer';
 
 export function Homepage() {
   return (
-    <div>
-      <Menu />
+    <Container>
+      <Navbar />
       <Featured
         picture={headerImg}
         title="Food app"
@@ -57,6 +57,6 @@ export function Homepage() {
       />
 
       <Footer />
-    </div>
+    </Container>
   );
 }

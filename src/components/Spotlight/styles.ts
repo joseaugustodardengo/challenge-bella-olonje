@@ -1,17 +1,23 @@
 import styled from 'styled-components';
 
-export const Container = styled.div`
+export const Container = styled.div`    
   display: flex;  
   align-items: center;
   justify-content: center;  
-  margin-top: -12rem;
+  width: 54.8rem;
+  height: 64rem;
+  margin: -10rem auto;
 
-  img {
-    margin: 0 -7rem;
-  }
+  &:nth-child(1) {
+    margin-top: -10rem auto; 
+  }  
+  
+  @media (min-width: 320px) and (max-width: 425px) {
+    width: 100%;
 
-  img:last-child {
-    margin-bottom: -6rem;
+    img {
+      width: 50%;
+    }
   }
   
 `
